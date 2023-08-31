@@ -7,7 +7,7 @@ userRoutes.post("/register", register);
 userRoutes.post("/login", login);
 userRoutes.put("/userParcel/:id", [isAuth], addParcel);
 userRoutes.put("/userInvoice/:id", [isAuth], addInvoice);
-userRoutes.get("/userAllParcels/:id", [isAuth], getAllParcels);
+userRoutes.get("/userAllParcels/:id", getAllParcels);
 userRoutes.get("", [isAdmin], getUser);
 userRoutes.put("/:id", [isAuth], putUser);
 // userRoutes.post("", postUser);
